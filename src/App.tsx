@@ -212,7 +212,7 @@ const translations: Translations = {
   dispatch: { en: 'Dispatch', ru: 'Диспетчеризация', uz: 'Dispetcherlik' },
   accountingDesc: {
     en: 'Accounting in the logistics industry is a specialized field that goes far beyond basic bookkeeping. It involves the meticulous tracking, analysis, and management of all financial transactions associated with the movement of freight from origin to destination. Key aspects include:\n\n• Freight Billing & Invoicing: Accurately calculating charges based on weight, distance, and specialized services (accessorials).\n• Freight Auditing: A critical process of verifying carrier invoices against agreed-upon rates and contracts to prevent overpayment.\n• Accounts Payable & Receivable: Managing the delicate balance of paying carriers and vendors while ensuring timely collection from shippers.\n• Financial Reporting & KPIs: Analyzing metrics like Operating Ratio, Revenue per Mile, and Fuel Surcharge recovery to measure business health.\n• Regulatory Compliance: Handling complex tax requirements such as IFTA (International Fuel Tax Agreement) and local transportation taxes.\n\nEffective logistics accounting is the backbone of a profitable operation, providing the transparency needed to optimize costs and manage cash flow in a high-volume, low-margin environment.',
-    ru: 'Бухгалтерский учет в логистической отрасли — это специализированная область, которая выходит далеко за рамки простого ведения бухгалтерии. Он включает в себя тщательное отслеживание, анализ и управление всеми финансовыми потоками, связанными с перемещением грузов от пункта отправления до пункта назначения. Ключевые аспекты включают:\n\n• Выставление счетов за фрахт: Точный расчет сборов на основе веса, расстояния и специализированных услуг.\n• Аудит фрахта: Критически важный процесс проверки счетов перевозчиков на соответствие согласованным тарифам и контрактам для предотвращения переплат.\n• Дебиторская и кредиторская задолженность: Управление тонким балансом оплаты перевозчикам и поставщикам при обеспечении своевременного получения средств от отправителей.\n• Финансовая отчетность и KPI: Анализ таких показателей, как операционный коэффициент, доход на милю и возмещение топливных надбавок для оценки состояния бизнеса.\n• Соблюдение нормативных требований: Обработка сложных налоговых требований, таких как IFTA (Международное соглашение о налоге на топливо) и местные транспортные налоги.\n\nЭффективный логистический учет является основой прибыльной деятельности, обеспечивая прозрачность, необходимую для оптимизации затрат и управления денежными потоками в условиях больших объемов и низкой маржи.',
+    ru: 'Бухгалтерский учет в логистической отрасли — это специализированная область, которая выходит далеко за рамки простого ведения бухгалтерии. Он включает в себя тщательное отслеживание, анализ и управление всеми финансовыми потоками, связанными с перемещением грузов от пункта отправления до пункта назначения. Ключевые аспекты включают:\n\n• Выставление счетов за фрахт: Точный расчет сборов на основе веса, расстояния и специализированных услуг.\n• Аудит фрахта: Критически важный процесс проверки счетов перевозчиков на соответствие согласованным тарифам и контрактам для предотвращения переплат.\n• Дебиторская и кредиторская задолженность: Управление тонким балансом оплаты перевозчикам и поставщикам при ��беспечении своевременного получения средств от отправителей.\n• Финансовая отчетность и KPI: Анализ таких показателей, как операционный коэффициент, доход на милю и возмещение топливных надбавок для оценки состояния бизнеса.\n• Соблюдение нормативных требований: Обработка сложных налоговых требований, таких как IFTA (Международное соглашение о налоге на топливо) и местные транспортные налоги.\n\nЭффективный логистический учет является основой прибыльной деятельности, обеспечивая прозрачность, необходимую для оптимизации затрат и управления денежными потоками в условиях больших объемов и низкой маржи.',
     uz: 'Logistika sohasida buxgalteriya hisobi oddiy buxgalteriya hisobidan ancha yuqori bo\'lgan ixtisoslashgan sohadir. U yuklarni kelib chiqish joyidan belgilangan joyga ko\'chirish bilan bog\'liq barcha moliyaviy operatsiyalarni kuzatish, tahlil qilish va boshqarishni o\'z ichiga oladi. Asosiy jihatlarga quyidagilar kiradi:\n\n• Yuklar uchun hisob-faktura: Vazn, masofa va ixtisoslashtirilgan xizmatlar asosida to\'lovlarni aniq hisoblash.\n• Yuk auditi: To\'lovlarni ortiqcha to\'lashning oldini olish uchun tashuvchi hisob-fakturalarini kelishilgan stavkalar va shartnomalar bilan solishtirishning muhim jarayoni.\n• Debitorlik va kreditorlik qarzlari: Yuk jo\'natuvchilardan o\'z vaqtida to\'lovlarni yig\'ishni ta\'minlagan holda tashuvchilar va yetkazib beruvchilarga to\'lovlarni amalga oshirishning nozik muvozanatini boshqarish.\n• Moliyaviy hisobot va KPI: Biznes holatini o\'lchash uchun Operatsion koeffitsient, har bir mil uchun daromad va yoqilg\'i qo\'shimcha to\'lovlarini qoplash kabi ko\'rsatkichlarni tahlil qilish.\n• Normativ muvofiqlik: IFTA (Xalqaro yoqilg\'i solig\'i to\'g\'risidagi bitim) va mahalliy transport soliqlari kabi murakkab soliq talablarini bajarish.\n\nSamarali logistika hisobi foydali operatsiyaning asosi bo\'lib, yuqori hajmli va past marjali muhitda xarajatlarni optimallashtirish va pul oqimlarini boshqarish uchun zarur bo\'lgan shaffoflikni ta\'minlaydi.'
   },
   driverHiringDesc: {
@@ -489,15 +489,14 @@ const Navbar = ({ activeTab, setActiveTab }: { activeTab: string, setActiveTab: 
         {/* Logo Section */}
         <div className="flex items-center">
           <div 
-            className="flex-shrink-0 flex items-center cursor-pointer group gap-2" 
+            className="flex-shrink-0 flex items-center cursor-pointer group gap-3" 
             onClick={() => setActiveTab(user?.role === 'admin' ? 'students' : 'home')}
           >
-            <div className="w-8 h-8 bg-[#00A3FF] rounded-lg flex items-center justify-center text-white">
-              <Zap size={20} fill="currentColor" />
-            </div>
-            <span className="text-xl font-bold tracking-tight text-zinc-900">
-              Logistmate
-            </span>
+            <img 
+              src="/logistmate-logo.png" 
+              alt="Logistmate" 
+              className="h-10 w-auto"
+            />
           </div>
         </div>
 
@@ -561,15 +560,11 @@ const Navbar = ({ activeTab, setActiveTab }: { activeTab: string, setActiveTab: 
         {/* Actions Section - Right Aligned */}
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center gap-4 pr-4 border-r border-zinc-100">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-blue-900 rounded-full flex items-center justify-center text-white overflow-hidden">
-                <Globe size={16} />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-[10px] font-bold text-blue-900 leading-none">BIG-I</span>
-                <span className="text-[8px] font-medium text-zinc-400 leading-none uppercase tracking-tighter">Study</span>
-              </div>
-            </div>
+            <img 
+              src="/bigi-study-logo.png" 
+              alt="BIG-I STUDY" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {user?.role !== 'admin' && (
