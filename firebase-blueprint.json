@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "A user of the LogistMate platform.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The unique ID from Firebase Auth." },
+        "email": { "type": "string", "format": "email", "description": "The user's email address." },
+        "displayName": { "type": "string", "description": "The user's display name." },
+        "role": { "type": "string", "enum": ["admin", "user"], "description": "The user's role." },
+        "joinedAt": { "type": "string", "format": "date-time", "description": "When the user joined." },
+        "status": { "type": "string", "enum": ["Active", "Inactive"], "description": "The user's current status." }
+      },
+      "required": ["uid", "email", "role", "joinedAt", "status"]
+    }
+  },
+  "firestore": {
+    "/users/{uid}": {
+      "schema": "User",
+      "description": "User profile documents."
+    }
+  }
+}

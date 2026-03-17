@@ -1,0 +1,94 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: users
+    // Document ID: {uid}
+    // Fields:
+    //   - uid: string (required) - The user's unique ID
+    //   - email: string (required, email) - The user's email address
+    //   - displayName: string (required) - The user's name
+    //   - role: string (required, enum: ['admin', 'user']) - The user's role
+    //   - joinedAt: timestamp (required) - When the user joined
+    //   - status: string (required, enum: ['Active', 'Inactive']) - User status
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && (
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+        (request.auth.token.email == "desknet034@gmail.com" && request.auth.token.email_verified == true)
+      );
+    }
+
+    function isValidUser(data) {
+      return data.keys().hasAll(['uid', 'email', 'displayName', 'role', 'joinedAt', 'status']) &&
+             data.uid is string &&
+             data.email is string &&
+             data.displayName is string &&
+             data.role in ['admin', 'user'] &&
+             data.joinedAt is timestamp &&
+             data.status in ['Active', 'Inactive'] &&
+             data.displayName.size() < 100 &&
+             data.email.size() < 100;
+    }
+
+    function uidUnchanged() {
+      return request.resource.data.uid == request.auth.uid;
+    }
+
+    function roleUnchanged() {
+      return request.resource.data.role == resource.data.role;
+    }
+
+    function joinedAtUnchanged() {
+      return request.resource.data.joinedAt == resource.data.joinedAt;
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+
+    match /users/{userId} {
+      // Admins can read all users. Users can read their own profile.
+      allow read: if isAdmin() || isOwner(userId);
+      
+      // Anyone can create their own profile during signup
+      allow create: if isAuthenticated() && 
+                      isOwner(userId) && 
+                      isValidUser(request.resource.data) &&
+                      uidUnchanged() &&
+                      (request.resource.data.role == 'user' || isAdmin());
+
+      // Admins can update any user. Users can update their own profile (but not their role).
+      allow update: if (isAdmin() && isValidUser(request.resource.data)) || 
+                      (isOwner(userId) && 
+                       isValidUser(request.resource.data) && 
+                       roleUnchanged() && 
+                       joinedAtUnchanged());
+
+      // Only admins can delete users
+      allow delete: if isAdmin();
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
