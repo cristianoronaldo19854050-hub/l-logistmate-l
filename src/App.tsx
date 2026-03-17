@@ -212,7 +212,7 @@ const translations: Translations = {
   dispatch: { en: 'Dispatch', ru: 'Диспетчеризация', uz: 'Dispetcherlik' },
   accountingDesc: {
     en: 'Accounting in the logistics industry is a specialized field that goes far beyond basic bookkeeping. It involves the meticulous tracking, analysis, and management of all financial transactions associated with the movement of freight from origin to destination. Key aspects include:\n\n• Freight Billing & Invoicing: Accurately calculating charges based on weight, distance, and specialized services (accessorials).\n• Freight Auditing: A critical process of verifying carrier invoices against agreed-upon rates and contracts to prevent overpayment.\n• Accounts Payable & Receivable: Managing the delicate balance of paying carriers and vendors while ensuring timely collection from shippers.\n• Financial Reporting & KPIs: Analyzing metrics like Operating Ratio, Revenue per Mile, and Fuel Surcharge recovery to measure business health.\n• Regulatory Compliance: Handling complex tax requirements such as IFTA (International Fuel Tax Agreement) and local transportation taxes.\n\nEffective logistics accounting is the backbone of a profitable operation, providing the transparency needed to optimize costs and manage cash flow in a high-volume, low-margin environment.',
-    ru: 'Бухгалтерский учет в логистической отрасли — это специализированная область, которая выходит далеко за рамки простого ведения бухгалтерии. Он включает в себя тщательное отслеживание, анализ и управление всеми финансовыми потоками, связанными с перемещением грузов от пункта отправления до пункта назначения. Ключевые аспекты включают:\n\n• Выставление счетов за фрахт: Точный расчет сборов на основе веса, расстояния и специализированных услуг.\n• Аудит фрахта: Критически важный процесс проверки счетов перевозчиков на соответствие согласованным тарифам и контрактам для предотвращения переплат.\n• Дебиторская и кредиторская задолженность: Управление тонким балансом оплаты перевозчикам и поставщикам при ����беспечении своевременного получения средств от отправителей.\n• Финансовая отчетность и KPI: Анализ таких показателей, как операционный коэффициент, доход на милю и возмещение топливных надбавок для оценки состояния бизнеса.\n• Соблюдение нормативных требований: Обработка сложных налоговых требований, таких как IFTA (Международное соглашение о налоге на топливо) и местные транспортные налоги.\n\nЭффективный логистический учет является основой прибыльной деятельности, обеспечивая прозрачность, необходимую для оптимизации затрат и управления денежными потоками в условиях больших объемов и низкой маржи.',
+    ru: 'Бухгалтерский учет в логистической отрасли — это специализированная область, которая выходит далеко за рамки простого ведения бухгалтерии. Он включает в себя тщательное отслеживание, анализ и управление всеми финансовыми потоками, связанными с перемещением грузов от пункта отправления до пункта назначения. Ключевые аспекты включают:\n\n• Выставление счетов за фрахт: Точный расчет сборов на основе веса, расстояния и специализированных услуг.\n• Аудит фрахта: Критически важный процесс проверки счетов перевозчиков на соответствие согласованным тарифам и контрактам для предотвращения переплат.\n• Дебиторская и кредиторская задолженность: Управление тонким балансом оплаты перевозчикам и поставщикам при ������беспечении своевременного получения средств от отправителей.\n• Финансовая отчетность и KPI: Анализ таких показателей, как операционный коэффициент, доход на милю и возмещение топливных надбавок для оценки состояния бизнеса.\n• Соблюдение нормативных требований: Обработка сложных налоговых требований, таких как IFTA (Международное соглашение о налоге на топливо) и местные транспортные налоги.\n\nЭффективный логистический учет является основой прибыльной деятельности, обеспечивая прозрачность, необходимую для оптимизации затрат и управления денежными потоками в условиях больших объемов и низкой маржи.',
     uz: 'Logistika sohasida buxgalteriya hisobi oddiy buxgalteriya hisobidan ancha yuqori bo\'lgan ixtisoslashgan sohadir. U yuklarni kelib chiqish joyidan belgilangan joyga ko\'chirish bilan bog\'liq barcha moliyaviy operatsiyalarni kuzatish, tahlil qilish va boshqarishni o\'z ichiga oladi. Asosiy jihatlarga quyidagilar kiradi:\n\n• Yuklar uchun hisob-faktura: Vazn, masofa va ixtisoslashtirilgan xizmatlar asosida to\'lovlarni aniq hisoblash.\n• Yuk auditi: To\'lovlarni ortiqcha to\'lashning oldini olish uchun tashuvchi hisob-fakturalarini kelishilgan stavkalar va shartnomalar bilan solishtirishning muhim jarayoni.\n• Debitorlik va kreditorlik qarzlari: Yuk jo\'natuvchilardan o\'z vaqtida to\'lovlarni yig\'ishni ta\'minlagan holda tashuvchilar va yetkazib beruvchilarga to\'lovlarni amalga oshirishning nozik muvozanatini boshqarish.\n• Moliyaviy hisobot va KPI: Biznes holatini o\'lchash uchun Operatsion koeffitsient, har bir mil uchun daromad va yoqilg\'i qo\'shimcha to\'lovlarini qoplash kabi ko\'rsatkichlarni tahlil qilish.\n• Normativ muvofiqlik: IFTA (Xalqaro yoqilg\'i solig\'i to\'g\'risidagi bitim) va mahalliy transport soliqlari kabi murakkab soliq talablarini bajarish.\n\nSamarali logistika hisobi foydali operatsiyaning asosi bo\'lib, yuqori hajmli va past marjali muhitda xarajatlarni optimallashtirish va pul oqimlarini boshqarish uchun zarur bo\'lgan shaffoflikni ta\'minlaydi.'
   },
   driverHiringDesc: {
@@ -266,7 +266,7 @@ const translations: Translations = {
   substancesAlcohol: { en: 'Controlled Substances/Alcohol', ru: 'Контролируемые вещества/Алкоголь', uz: 'Nazorat qilinadigan moddalar/Alkogol' },
   substancesAlcoholDesc: { en: 'Don\'t misuse drugs or alcohol while driving; it\'s dangerous and illegal.', ru: 'Не злоупотребляйте наркотиками или алкоголем во время вождения; это опасно и незаконно.', uz: 'Haydash paytida giyohvand moddalar yoki alkogoldan noto\'g\'ri foydanmang; bu xavfli va noqonuniy.' },
   driverFitness: { en: 'Driver Fitness', ru: 'Пригодность водителя', uz: 'Haydovchining yaroqliligi' },
-  driverFitnessDesc: { en: 'Keep your driving records complete and up to date to help your company perform well.', ru: 'Ведите свои записи о вождении в полном объеме и обновляйте их, чтобы помочь вашей компании работать хорошо.', uz: 'Kompaniyangizga yaxshi natijalarga erishishda yordam berish uchun haydovchilik yozuvlaringizni to\'liq va dolzarb holda saqlang.' },
+  driverFitnessDesc: { en: 'Keep your driving records complete and up to date to help your company perform well.', ru: 'Ведите свои записи о вождении в полном объеме �� обновляйте их, чтобы помочь вашей компании работать хорошо.', uz: 'Kompaniyangizga yaxshi natijalarga erishishda yordam berish uchun haydovchilik yozuvlaringizni to\'liq va dolzarb holda saqlang.' },
   hmCompliance: { en: 'HM Compliance', ru: 'Соблюдение HM', uz: 'HM muvofiqligi' },
   hmComplianceDesc: { en: 'Take special care when transporting HM to help make the Nation\'s highways safer.', ru: 'Соблюдайте особую осторожность при транспортировке опасных грузов, чтобы сделать автомагистрали страны безопаснее.', uz: 'Mamlakat magistrallarini xavfsizroq qilishga yordam berish uchun xavfli materiallarni tashishda alohida ehtiyot bo\'ling.' },
   hosComplianceTitle: { en: 'Hours of Service (HOS) Compliance', ru: 'Соблюдение режима труда и отдыха (HOS)', uz: 'Xizmat soatlari (HOS) muvofiqligi' },
@@ -327,7 +327,7 @@ const translations: Translations = {
   eldBenefitsBullet1: { en: 'Reduces driver fatigue and promotes safer driving behavior', ru: 'Снижает утомляемость водителей и способствует более безопасному вождению', uz: 'Haydovchilar charchoqini kamaytiradi va xavfsizroq haydash xatti-harakatlarini rag\'batlantiradi' },
   eldBenefitsBullet2: { en: 'Eliminates paper logs and reduces administrative workload', ru: 'Исключает бумажные журналы и снижает административную нагрузку', uz: 'Qog\'oz jurnallarni yo\'q qiladi va ma\'muriy ish yukini kamaytiradi' },
   eldBenefitsBullet3: { en: 'Improves fleet visibility and planning', ru: 'Улучшает видимость автопарка и планирование', uz: 'Parkning ko\'rinishini va rejalashtirishni yaxshilaydi' },
-  eldExemptionsBullet1: { en: 'Drivers using paper logs for no more than 8 days in 30-day period', ru: 'Водители, использующие бумажные журналы не более 8 дней в течение 30-дневного периода', uz: '30 kunlik muddat ichida 8 kundan ortiq bo\'lmagan qog\'oz jurnallardan foydalanadigan haydovchilar' },
+  eldExemptionsBullet1: { en: 'Drivers using paper logs for no more than 8 days in 30-day period', ru: 'Водители, использующ��е бумажные журналы не более 8 дней в течение 30-дневного периода', uz: '30 kunlik muddat ichida 8 kundan ortiq bo\'lmagan qog\'oz jurnallardan foydalanadigan haydovchilar' },
   eldExemptionsBullet2: { en: 'Short-haul drivers operating within limited radius', ru: 'Водители, осуществляющие перевозки на короткие расстояния в ограниченном радиусе', uz: 'Cheklangan radiusda ishlaydigan qisqa masofali haydovchilar' },
   eldExemptionsBullet3: { en: 'Vehicles with engines manufactured before year 2000', ru: 'Транспортные средства с двигателями, выпущенными до 2000 года', uz: 'Dvigatellari 2000-yildan oldin ishlab chiqarilgan transport vositalari' },
   driverRespBullet1: { en: 'Log in to the ELD each day', ru: 'Входите в ELD каждый день', uz: 'Har kuni ELD-ga kiring' },
@@ -382,7 +382,7 @@ const translations: Translations = {
   vendorManagement: { en: 'Vendor management and negotiation', ru: 'Управление поставщиками и переговоры', uz: 'Sotuvchilarni boshqarish va muzokaralar' },
   performanceAnalysis: { en: 'Performance analysis and reporting', ru: 'Анализ эффективности и отчетность', uz: 'Samaradorlikni tahlil qilish va hisobot berish' },
   continuousImprovement: { en: 'Continuous improvement initiatives', ru: 'Инициативы по непрерывному совершенствованию', uz: 'Doimiy takomillashtirish tashabbuslari' },
-  fleetConclusion: { en: 'Fleet management is a multidisciplinary function that integrates operations, safety, compliance, technology, and financial control. When managed effectively, it enhances safety, reduces costs, improves efficiency, and supports long-term organizational success. Fleet managers serve as the crucial link between drivers, management, vendors, and regulators—ensuring that all parties work together toward common operational goals.', ru: 'Управление автопарком — это междисциплинарная функция, объединяющая операции, безопасность, соблюдение требований, технологии и финансовый контроль. При эффективном управлении оно повышает безопасность, снижает затраты, повышает эффективность и поддерживает долгосрочный успех организац��и. Менеджеры автопарка служат важным связующим звеном между водителями, руководством, поставщиками и регулирующими органами, обеспечивая совместную работу всех сторон для достижения общих операционных целей.', uz: 'Parkni boshqarish - bu operatsiyalar, xavfsizlik, muvofiqlik, texnologiya va moliyaviy nazoratni birlashtirgan ko\'p tarmoqli funktsiyadir. Samarali boshqarilganda, u xavfsizlikni oshiradi, xarajatlarni kamaytiradi, samaradorlikni yaxshilaydi va tashkilotning uzoq muddatli muvaffaqiyatini qo\'llab-quvvatlaydi. Park menejerlari haydovchilar, rahbariyat, sotuvchilar va tartibga soluvchilar o\'rtasidagi muhim bo\'g\'in bo\'lib xizmat qiladi - barcha tomonlarning umumiy operatsion maqsadlar yo\'lida birgalikda ishlashini ta\'minlaydi.' },
+  fleetConclusion: { en: 'Fleet management is a multidisciplinary function that integrates operations, safety, compliance, technology, and financial control. When managed effectively, it enhances safety, reduces costs, improves efficiency, and supports long-term organizational success. Fleet managers serve as the crucial link between drivers, management, vendors, and regulators—ensuring that all parties work together toward common operational goals.', ru: 'Управление автопарком — это междисциплинарная функция, объединяющая операции, безопасность, соблюдение требований, технологии и финансовый контроль. При эффективном управлении оно повышает безопасность, снижает затраты, повышает эффективность и поддерживает долгосрочный успех ��рганизац��и. Менеджеры автопарка служат важным связующим звеном между водителями, руководством, поставщиками и регулирующими органами, обеспечивая совместную работу всех сторон для достижения общих операционных целей.', uz: 'Parkni boshqarish - bu operatsiyalar, xavfsizlik, muvofiqlik, texnologiya va moliyaviy nazoratni birlashtirgan ko\'p tarmoqli funktsiyadir. Samarali boshqarilganda, u xavfsizlikni oshiradi, xarajatlarni kamaytiradi, samaradorlikni yaxshilaydi va tashkilotning uzoq muddatli muvaffaqiyatini qo\'llab-quvvatlaydi. Park menejerlari haydovchilar, rahbariyat, sotuvchilar va tartibga soluvchilar o\'rtasidagi muhim bo\'g\'in bo\'lib xizmat qiladi - barcha tomonlarning umumiy operatsion maqsadlar yo\'lida birgalikda ishlashini ta\'minlaydi.' },
   conclusion: { en: 'Conclusion', ru: 'Заключение', uz: 'Xulosa' },
 };
 
@@ -760,7 +760,7 @@ const HomePage = () => {
       
       {/* Hero Section */}
       <section className="relative max-w-7xl mx-auto px-4 pt-40 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white to-transparent -z-10" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -768,13 +768,13 @@ const HomePage = () => {
             transition={{ duration: 0.8 }}
             className="space-y-10"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E6F6FF] text-[#00A3FF] rounded-full text-xs font-bold tracking-wide">
-              <div className="w-1.5 h-1.5 bg-[#00A3FF] rounded-full animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E0F7FF] text-[#00A3FF] rounded-full text-xs font-bold tracking-wide">
+              <div className="w-2 h-2 bg-[#00A3FF] rounded-full" />
               {t('logisticsPlatformBadge')}
             </div>
             
             <h1 className="text-6xl md:text-[80px] font-bold text-[#0B3D52] leading-[0.95] tracking-tight">
-              Your successful career in logistics starts here
+              {t('heroTitle')}
             </h1>
             
             <p className="text-lg text-zinc-500 leading-relaxed max-w-lg">
@@ -789,7 +789,7 @@ const HomePage = () => {
                   setAuthMode('signup');
                   setIsAuthModalOpen(true);
                 }}
-                className="px-8 py-4 bg-[#00A3FF] text-white text-sm font-bold rounded-xl hover:bg-[#0086D1] transition-all shadow-xl shadow-blue-500/20 flex items-center gap-2"
+                className="px-8 py-4 bg-[#00A3FF] text-white text-sm font-bold rounded-full hover:bg-[#0086D1] transition-all shadow-xl shadow-blue-500/20 flex items-center gap-2"
               >
                 {t('startLearningNow')}
                 <ArrowRight size={18} />
@@ -801,7 +801,7 @@ const HomePage = () => {
                     setAuthMode('login');
                     setIsAuthModalOpen(true);
                   }}
-                  className="px-8 py-4 bg-white text-zinc-900 text-sm font-bold rounded-xl border border-zinc-200 hover:bg-zinc-50 transition-all"
+                  className="px-8 py-4 bg-white text-zinc-900 text-sm font-bold rounded-full border border-zinc-200 hover:bg-zinc-50 transition-all"
                 >
                   {t('signIn')}
                 </button>
